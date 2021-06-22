@@ -7,22 +7,23 @@ var Preloader = new Phaser.Class({
     
     preload() 
     {
-        this.load.bitmapFont('gold', 'assets/gold.png');
+        this.load.bitmapFont('gold', './assets/gold.png');
 
-        this.load.spritesheet('Juan', 'assets/Juan.png', {frameWidth: 20, frameHeight: 23});
+        this.load.spritesheet('Juan', './assets/Juan.png', {frameWidth: 20, frameHeight: 23});
 
-        this.load.tilemapTiledJSON('nivel', 'assets/Nivel 1.json');
-        this.load.image('tiles', 'assets/Tileset.png')
-        this.load.image('background0', 'assets/BG0.png')
-        this.load.image('background1', 'assets/BG1.png')
-        this.load.image('background2', 'assets/BG2.png')
-        this.load.image('background3', 'assets/BG3.png')
-        this.load.image('coins', 'assets/Coin1.png')
-        this.load.image('borde', 'assets/borde.png')
-        this.load.image('suelo', 'assets/suelo.png')
-        this.load.spritesheet('speed', 'assets/speed.png',{frameWidth: 32, frameHeight: 28})
-        this.load.spritesheet('coin', 'assets/coin.png', {frameWidth: 32, frameHeight: 28})
-        this.load.spritesheet('heart', 'assets/Heart.png',{frameWidth: 32, frameHeight: 32})
+        this.load.tilemapTiledJSON('nivel', './assets/Nivel 1.json');
+        this.load.image('tiles', './assets/Tileset.png')
+        this.load.image('background0', './assets/BG0.png')
+        this.load.image('background1', './assets/BG1.png')
+        this.load.image('background2', './assets/BG2.png')
+        this.load.image('background3', './assets/BG3.png')
+        this.load.image('coins', './assets/Coin1.png')
+        this.load.image('heart1', './assets/heart1.png')
+        this.load.image('borde', './assets/borde.png')
+        this.load.image('suelo', './assets/suelo.png')
+        this.load.spritesheet('speed', './assets/speed.png',{frameWidth: 32, frameHeight: 28})
+        this.load.spritesheet('coin', './assets/coin.png', {frameWidth: 32, frameHeight: 28})
+        this.load.spritesheet('heart', './assets/Heart.png',{frameWidth: 32, frameHeight: 32})
 
         this.cameras.main.setBounds(0, 0, 3392, 100);
         this.physics.world.setBounds(0, 0, 3392, 240);
