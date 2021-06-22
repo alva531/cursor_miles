@@ -17,7 +17,7 @@ var Preloader = new Phaser.Class({
         this.load.image('background1', 'assets/BG1.png')
         this.load.image('background2', 'assets/BG2.png')
         this.load.image('background3', 'assets/BG3.png')
-        this.load.image('coins', 'assets/coin1.png')
+        this.load.image('coins', 'assets/Coin1.png')
         this.load.image('borde', 'assets/borde.png')
         this.load.image('suelo', 'assets/suelo.png')
         this.load.spritesheet('speed', 'assets/speed.png',{frameWidth: 32, frameHeight: 28})
