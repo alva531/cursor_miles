@@ -70,7 +70,7 @@ class Nivel1 extends Phaser.Scene {
             child.y += Phaser.Math.FloatBetween(200, 10) 
             child.score = 10;
             child.setScale(1);
-            //child.anims.play('girar', true)
+            child.anims.play('girar', true)
 
         });
 
