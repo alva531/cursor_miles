@@ -6,7 +6,7 @@ let config = {
         default: 'arcade',
         arcade: {
             gravity: { y: 1000 },
-            debug: false}
+            debug: false    }
     },
     scale: {
         mode: Phaser.Scale.CENTER_BOTH,

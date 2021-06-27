@@ -25,6 +25,7 @@ var Preloader = new Phaser.Class({
         this.load.image('menu', './assets/menu.png');
         this.load.image('creditos', './assets/creditos.png');
         this.load.image('gameover', './assets/gameover.png');
+        this.load.image('coin1', './assets/coin1.png');
         this.load.spritesheet('speed', './assets/speed.png',{frameWidth: 32, frameHeight: 28});
         this.load.spritesheet('coin', './assets/coin.png', {frameWidth: 14, frameHeight: 28});
         this.load.spritesheet('heart', './assets/Heart.png',{frameWidth: 32, frameHeight: 28});

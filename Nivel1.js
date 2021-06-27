@@ -47,7 +47,7 @@ class Nivel1 extends Phaser.Scene {
         var plataformaborde = mapa.createDynamicLayer('plataformaborde', tilesets, 0, 0);
         plataformaborde.setCollisionByProperty({borde: true});
 
-        jugador = this.physics.add.sprite(3000,350,'Juan',0);
+        jugador = this.physics.add.sprite(20,350,'Juan',0);
         jugador.setSize(13)
         jugador.herido=false
         jugador.recuperar=0
