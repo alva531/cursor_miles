@@ -27,7 +27,7 @@ var Preloader = new Phaser.Class({
         this.load.image('gameover', './assets/gameover.png');
         this.load.image('coin1', './assets/coin1.png');
         this.load.spritesheet('speed', './assets/speed.png',{frameWidth: 32, frameHeight: 28});
-        this.load.spritesheet('coin', './assets/Coin.png', {frameWidth: 14, frameHeight: 28});
+        this.load.spritesheet('coin', './assets/coin.png', {frameWidth: 14, frameHeight: 28});
         this.load.spritesheet('heart', './assets/Heart.png',{frameWidth: 32, frameHeight: 28});
         this.load.audio('SpeedAudio', './assets/sounds/Speed.wav');
         this.load.audio('CoinAudio', './assets/sounds/Coin.wav');
@@ -52,13 +52,13 @@ var Preloader = new Phaser.Class({
     {
 
 
-        jugar = this.add.text(1337, 530, 'JUGAR', 
+        jugar = this.add.text(1000, 430, 'JUGAR', 
         {fontSize: '150px', fill: '#FFFFFF'});
         jugar.setInteractive()
 
         jugar.on('pointerdown', () => this.scene.start('nivel1'), this.sound.play('Select'))
 
-        creditos = this.add.text(980, 850, 'CREDITOS', 
+        creditos = this.add.text(670, 670, 'CREDITOS', 
         {fontSize: '170px', fill: '#FFFFFF'});
         creditos.setInteractive()
 

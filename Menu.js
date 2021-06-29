@@ -5,13 +5,13 @@ class Menu extends Phaser.Scene {
 
     create() {
 
-        jugar = this.add.text(1337, 530, 'JUGAR', 
+        jugar = this.add.text(1000, 430, 'JUGAR', 
         {fontSize: '150px', fill: '#FFFFFF'});
         jugar.setInteractive()
 
         jugar.on('pointerdown', () => this.scene.start('nivel1'), this.sound.play('Select'))
 
-        creditos = this.add.text(980, 850, 'CREDITOS', 
+        creditos = this.add.text(670, 670, 'CREDITOS', 
         {fontSize: '170px', fill: '#FFFFFF'});
         creditos.setInteractive()
 

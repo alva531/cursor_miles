@@ -5,9 +5,9 @@ class Gameover extends Phaser.Scene{
 
     create() {
 
-        this.add.text(250, 910, 'ATRAS', { font: '100px Arial', fill: '#ffffff' }).setOrigin(0.5).setInteractive()
+        this.add.text(200, 730, 'ATRAS', { font: '100px Arial', fill: '#ffffff' }).setOrigin(0.5).setInteractive()
         .on('pointerdown', () => this.atras() );
-        this.add.text(1500, 910, 'REINICIAR', { font: '150px Arial', fill: '#ffffff' }).setOrigin(0.5).setInteractive()
+        this.add.text(1190, 730, 'REINICIAR', { font: '150px Arial', fill: '#ffffff' }).setOrigin(0.5).setInteractive()
         .on('pointerdown', () => this.reiniciar() );
 
         this.add.image(window.innerWidth/2,window.innerHeight/2,'gameover').setScale(1);

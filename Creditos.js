@@ -5,7 +5,7 @@ class Creditos extends Phaser.Scene{
 
     create() {
 
-        this.add.text(100, 870, 'ATRAS', { font: '120px Arial', fill: '#ffffff' }).setInteractive()
+        this.add.text(100, 670, 'ATRAS', { font: '120px Arial', fill: '#ffffff' }).setInteractive()
         .on('pointerdown', () => this.atras() );
 
         this.add.image(window.innerWidth/2,window.innerHeight/2,'creditos').setScale(1);

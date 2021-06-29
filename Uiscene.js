@@ -6,14 +6,14 @@ class UIScene extends Phaser.Scene{
 
    create(){
 
-    this.add.text(1600, 16, 'Score: ', { fontFamily: 'Impact', fontSize: '52px', fill: '#ffd54d' });
-    this.score = this.add.text(1750, 16, '0', { fontFamily: 'Impact', fontSize: '52px', fill: '#ffd54d' });
+    this.add.text(1350, 16, 'Score: ', { fontFamily: 'Impact', fontSize: '52px', fill: '#ffd54d' });
+    this.score = this.add.text(1500, 16, '0', { fontFamily: 'Impact', fontSize: '52px', fill: '#ffd54d' });
 
     this.add.text(15, 16, 'Vidas: ', { fontFamily: 'Impact', fontSize: '52px', fill: '#ffd54d' });
     this.vidas = this.add.text(160, 16, '3', { fontFamily: 'Impact', fontSize: '52px', fill: '#ffd54d' });
 
     timedEvent = this.time.addEvent({ delay: 1000, callback: this.onSecond, callbackScope: this, loop: true });
-    timeText = this.add.text(1220, 16, 'Tiempo:', { fontFamily: 'Impact', fontSize: '52px', fill: '#ffd54d' });
+    timeText = this.add.text(1050, 16, 'Tiempo:', { fontFamily: 'Impact', fontSize: '52px', fill: '#ffd54d' });
 
 
     
